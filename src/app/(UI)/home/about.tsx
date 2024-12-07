@@ -120,7 +120,7 @@ export default function AboutSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#E4FCFF] rounded-xl p-6 transition-transform hover:scale-105 mx-auto text-center max-h-[18rem] mb-4"
+              className="bg-[#E4FCFF] rounded-xl p-2 transition-transform hover:scale-105 mx-auto text-center max-h-[18rem] mb-4"
             >
               <div className="flex justify-center">
                 <Image
