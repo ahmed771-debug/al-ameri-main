@@ -6,7 +6,7 @@ import { MessageSquare, Calendar } from "lucide-react";
 
 export default function AnimatedHeroImage() {
   return (
-    <div className="relative md:w-full h-[500px] md:h-[600px]">
+    <div className="relative md:w-full h-[500px] md:h-[600px] px-3">
       {/* Background circle */}
       <div className="absolute inset-0">
         <motion.div

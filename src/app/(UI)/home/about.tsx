@@ -68,7 +68,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className=" justify-between sm:h-auto  bg-[#E4FCFF] rounded-lg p-6 md:p-8">
+          <div className=" justify-between sm:h-auto mt-3  bg-[#E4FCFF] rounded-lg p-6 md:p-8">
             <h4 className="text-xl font-semibold mb-4">Muwafaq Al-Ameri</h4>
             <div className="space-y-4 text-gray-600">
               Welcome to our website! My name is Muwafaq Al-Ameri, and from
