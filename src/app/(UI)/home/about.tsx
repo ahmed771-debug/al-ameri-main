@@ -116,11 +116,11 @@ export default function AboutSection() {
           </div>
         </header>
 
-        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-[6.75rem]">
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-[6.75rem] px-4">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#E4FCFF] rounded-xl p-6 transition-transform hover:scale-105 mx-auto text-center max-h-[18rem]"
+              className="bg-[#E4FCFF] rounded-xl p-6 transition-transform hover:scale-105 mx-auto text-center max-h-[18rem] mb-4"
             >
               <div className="flex justify-center">
                 <Image
@@ -144,7 +144,7 @@ export default function AboutSection() {
         </div>
 
         <div className="text-center">
-          <Button className="bg-[#00B5D8] hover:bg-[#00a0c0] text-white px-8">
+          <Button className="bg-[#00B5D8] hover:bg-[#00a0c0] text-white px-8 mb-4">
             See All
           </Button>
         </div>

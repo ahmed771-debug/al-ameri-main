@@ -56,7 +56,7 @@ export default function ContactSection() {
         <div className="  lg:px-4">
           <div className="lg:grid md:grid-cols-2 lg:gap-12">
             {/* Left Column */}
-            <div className="relative lg:w-[28.875rem] sm:w-[18rem] sm:mx-auto  mb-3 ">
+            <div className="relative lg:w-[28.875rem] sm:w-[18rem] sm:mx-auto  mb-10 ">
               <div className="relative aspect-[4/5] w-full sm:hidden lg:block">
                 <div className="absolute inset-0 rounded-lg overflow-hidden">
                   <Image
@@ -73,10 +73,10 @@ export default function ContactSection() {
 
             {/* Right Column */}
             <div className="">
-              <form className="space-y-4">
+              <form className="space-y-4 px-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label className="text-sm text-gray-600">Name</label>
+                    <label className="text-sm text-gray-600 font-bold">Name</label>
                     <input
                       type="text"
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00B5D8]"
@@ -85,7 +85,7 @@ export default function ContactSection() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm text-gray-600">Phone</label>
+                    <label className="text-sm text-gray-600 font-bold">Phone</label>
                     <input
                       type="tel"
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00B5D8]"
@@ -95,7 +95,7 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm text-gray-600">Email</label>
+                  <label className="text-sm text-gray-600 font-bold">Email</label>
                   <input
                     type="email"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00B5D8]"
@@ -104,7 +104,7 @@ export default function ContactSection() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm text-gray-600">Doctor</label>
+                  <label className="text-sm text-gray-600 font-bold">Doctor</label>
                   <select
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00B5D8]"
                     required
@@ -115,7 +115,7 @@ export default function ContactSection() {
                   </select>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm text-gray-600">Message</label>
+                  <label className="text-sm text-gray-600 font-bold">Message</label>
                   <textarea
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00B5D8] h-32"
                     placeholder="Write your message..."
@@ -124,7 +124,7 @@ export default function ContactSection() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-600">
                   <input type="checkbox" required />
-                  <label>You agree to our friendly privacy policy.</label>
+                  <label className="font-bold">You agree to our friendly privacy policy.</label>
                 </div>
                 <button
                   type="submit"

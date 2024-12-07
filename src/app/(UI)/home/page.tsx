@@ -9,9 +9,9 @@ import WhoWeAre from "./about";
 export default function HeroSection() {
   return (
     <>
-      <div className="lg:text-left sm:text-center lg:mx-[6.75rem] ">
-        <div className="grid md:grid-cols-2 gap-8 items-center  sm:px-[0px]">
-          <div className="space-y-6">
+      <div className="lg:text-left text-center lg:mx-[6.75rem] ">
+        <div className="md:grid md:grid-cols-2 gap-8 items-center  sm:p-2">
+          <div className="space-y-6 md:p-1 p-4">
             <p className="text-[#00B5D8] uppercase tracking-wider text-sm font-medium">
               Welcome to the Al-Ameri General Practice
             </p>
@@ -28,7 +28,7 @@ export default function HeroSection() {
               Get Started
             </button>
           </div>
-          <div className="relative">
+          <div className="relative sm:w-auto">
             {/* Main image container with background decoration */}
             <AnimatedHeroImage />
             {/* Chat bubble decoration */}
