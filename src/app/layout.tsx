@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import ToasterContainer from "@/components/ui/Toaster";
-import { StoreProvider } from "@/redux/StoreProvider";
+
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -23,9 +22,7 @@ export default function RootLayout({
       suppressHydrationWarning={true}
     >
       <body suppressHydrationWarning={true}>
-        <StoreProvider>
-          <ToasterContainer>{children}</ToasterContainer>
-        </StoreProvider>
+      {children}
       </body>
     </html>
   );

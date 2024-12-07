@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "prerender-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/src/middleware.js"
+      ],
+      "name": "src/middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!_next\\/static|favicon.ico|login|).*))(.json)?[\\/#\\?]?$",
+          "originalSource": "/((?!_next/static|favicon.ico|login|).*)"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/auth(.json)?[\\/#\\?]?$",
+          "originalSource": "/auth"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(\\/?index|\\/?index\\.json))?[\\/#\\?]?$",
+          "originalSource": "/"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/gallery(.json)?[\\/#\\?]?$",
+          "originalSource": "/gallery"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "environments": {
+        "previewModeId": "8d99f5deb42c951be9fbb7dc3c0c7844",
+        "previewModeSigningKey": "2fd32a4709adcb5911e1e2138ac29ea75e8c6ba9e9b292f6c2d5360cb9aa2400",
+        "previewModeEncryptionKey": "6ee3ff126883fbb0c437675a34d8b30a2ba3d2836585f779707e2616027c6ff4"
+      }
+    }
+  },
+  "functions": {},
+  "sortedMiddleware": [
+    "/"
+  ]
+}
