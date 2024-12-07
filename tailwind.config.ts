@@ -1,16 +1,13 @@
-import { Checkbox } from "@nextui-org/react";
-// tailwind.config.js
-const { nextui } = require("@nextui-org/react");
+import { nextui } from "@nextui-org/react"; // Using import instead of require
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    // ...
     // make sure it's pointing to the ROOT node_module
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
@@ -27,3 +24,5 @@ module.exports = {
   darkMode: "class",
   plugins: [nextui()],
 };
+
+export default config; // Export the configuration
